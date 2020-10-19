@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+{% block content %}
+<br>
+<br>
+ <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+<div class="container">
+    {% for pat in pats %}
+  <div class="row">
+
+      <div class="card border-info mb-3" style="max-width: 18rem;">
+  <div class="card-header">{{ pat.name }}, {{ pat.surname }}</div>
+  <div class="card-body text-info">
+    <h5 class="card-title">{{ pat.age}}</h5>
+    <p class="card-text">{{ pat.diagnosis }}</p>
+      <p class="card-text">{{ pat.addr }}</p>
+  </div>
+</div>
+  </div>
+     {% endfor %}
+    <a type="button" class="btn btn-primary" href="/addpatient">New</a>
+</div>
+{% endblock %}

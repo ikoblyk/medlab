@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block content %}
+<br>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+<div class="card align-items-center" style="width: 18rem;">
+  <img class="card-img-top" src="static/Diagnostic-512.png" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">New Exam</h5>
+
+  <ul class="list-group list-group-flush">
+
+    <li class="list-group-item">
+
+  <hr>
+
+    {{ wtf.quick_form(form) }}
+
+  <hr>
+       </li>
+  </ul>
+</div>
+    </div>
+  </div>
+</div>
+</div>
+{% endblock %}
